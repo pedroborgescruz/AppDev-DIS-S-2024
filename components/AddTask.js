@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 function AddTask({taskList, setTaskList}) {
-  const { onPress } = props;
+  // const { onPress } = props;
   const storeTask = async(newTask) => {
     try {
       await AsyncStorage.setItem('taskList', JSON.stringify(newTask));
